@@ -32,7 +32,8 @@ public class MainActivity extends AppCompatActivity {
                 progressBarListFragment_.addProgressBar(
                         new ProgressBarFragment(
                                 new Name("test_stream_name").appendSequenceNumber(++streamId_),
-                                "blah blah blah"
+                                "blah blah blah",
+                                getMainLooper()
                         )
                 );
             }
