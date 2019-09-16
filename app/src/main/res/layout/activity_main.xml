@@ -6,18 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:orientation="vertical">
 
         <fragment
             android:id="@+id/progress_bar_list_fragment"
             android:name="com.example.fragment_testing.ProgressBarListFragment"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </RelativeLayout>
+            android:layout_height="419dp"
+            tools:layout="@layout/fragment_progress_bar_list" />
+
+        <Button
+            android:id="@+id/add_progress_bar_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Progress Bar"
+            android:visibility="visible" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
